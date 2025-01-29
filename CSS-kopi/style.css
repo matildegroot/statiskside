@@ -1,0 +1,180 @@
+@font-face {
+    font-family: Overskrift;
+    src: url(../fonts/VIRUST.ttf);
+}
+
+@font-face {
+    font-family: Underoverskrift;
+    src: url(../fonts/Classyvogueregular.ttf);
+}
+
+body{
+    background-color:whitesmoke;
+}
+
+h1{
+    font-family: Overskrift;
+    font-size: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2{
+    font-family: Underoverskrift;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.overskrift{
+    font-family: Underoverskrift;
+    font-size: 60px;
+    margin-left: 50px; 
+}
+
+.category_list_container{
+    font-family:Underoverskrift;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    font-size: 40px;
+    gap: 30px;
+    color: white;
+    text-align: center;
+}
+
+.Accessories, .Apparel, .Footwear, .Free_items, .Personal_care, .Sporting_goods{
+    background-color: cadetblue;
+    padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+a{
+    color: inherit; 
+    text-decoration: none;
+}
+
+.product_list_container{
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: -10px;
+}
+.product1{
+    max-height: 300px;
+    width: auto;
+}
+.product2{
+    max-height: 300px;
+    width: auto;
+}
+.product3{
+    max-height: 300px;
+    width: auto;
+}
+.product4{
+    max-height: 300px;
+    width: auto;
+}
+
+h3{
+    font-size: 25px;
+    font-family: Underoverskrift;
+    margin-top: 10px;
+}
+
+p{
+    font-size:15px;
+    font-family: Underoverskrift;
+    opacity: 40%;
+}
+
+h4{
+    font-size: 15px;
+    font-family: Underoverskrift;
+    margin-top: 10px;
+}
+
+h5{
+    font-size: 20px;
+    font-family: Underoverskrift;
+    margin-top: -10px;
+    text-decoration: underline;   
+}
+
+.product2, .product4{
+    opacity: 40%;
+}
+
+.udsolgt{
+    position: absolute;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 1; 
+}
+
+.red_ring{
+    max-height: 500px;
+    width: auto;
+}
+
+.product_content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product_info{
+    text-align: center;
+    margin-top: -65px;
+}
+.purchase_section{
+    text-align: center;
+    background-color: lightgray;
+    max-height: 500px;
+    width: auto;
+    
+}
+
+.purchase_section button {
+    background-color: cadetblue;
+    color: white; 
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .purchase_section button:hover {
+    opacity: 50%;
+    transform: scale(1.05); 
+  }
+  
+  .purchase_section button:active {
+    background-color: #cc5200;
+    transform: scale(0.95); 
+  }
+  
+  .underoverskrift{
+    font-size: 15px;
+    font-family: Underoverskrift;
+    margin-top: -10px;
+  }
+
+  .gold_ring{
+    font-family: Underoverskrift;
+    font-size: 70px;
+  }
+
+  .Strom{
+    font-family: Underoverskrift;
+    font-size: 70px;
+    margin-top: 30px;
+  }
