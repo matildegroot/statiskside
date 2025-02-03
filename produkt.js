@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
-    <title>Product information</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <script src="produkt.js" defer></script>
-  </head>
-  <body>
-    <header><h1>FashionRUs</h1></header>
-    <main class="productContainer">
-      <!-- <div class="product_content">
+let productContainer = document.querySelector(".productContainer");
+fetch ("https://kea-alt-del.dk/t7/api/products/1164")
+.then ((response) => response.json())
+.then ((data) => {
+    productContainer.innerHTML = `
+    <div class="product_content">
         <div class="product_image">
           <img src="IMG/IMG_0902.webp" alt="Rød ring" class="red_ring" />
         </div>
         <div class="product_info">
-          <h1>Red ring</h1>
+          <h1>${data.articletype}</h1>
           <h3>Model name</h3>
           <h4>Gold ring with red heart</h4>
           <h3>Inventory number</h3>
@@ -33,8 +26,5 @@
           </select>
           <button class="underoverskrift">Add to basket</button>
         </div>
-      </div> -->
-    </main>
-    <footer></footer>
-  </body>
-</html>
+      </div>`;
+});
