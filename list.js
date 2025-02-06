@@ -1,7 +1,7 @@
 console.log("script hentet");
 
 const category = "Apparel";
-const listContainer = document.querySelector(".productList");
+const listContainer = document.querySelector(".productlistcontainer");
 
 fetch ("https://kea-alt-del.dk/t7/api/products?limit=10")
 .then ((response) => response.json())
@@ -12,7 +12,6 @@ function showProductList(data){
     .map(
         (product) =>
             `
-        <h2 class="overskrift">Accessories</h2>
       <div class="product_list_container">
         <div>
           <img src="IMG/IMG_0902.webp" alt="billede1" class="product1" />

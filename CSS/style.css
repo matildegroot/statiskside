@@ -31,7 +31,7 @@ h2{
     margin-left: 50px; 
 }
 
-.category_list_container{
+/* .category_list_container a {
     font-family:Underoverskrift;
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -47,7 +47,43 @@ h2{
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 10px;
+} */
+.category_list_container {
+    font-family: Underoverskrift;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    font-size: 40px;
+    gap: 30px;
+    text-align: center;
 }
+
+/* Styling for de nye kategori-knapper */
+.category_box {
+    background-color: cadetblue;
+    padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Styling af <a>-tags, så de ligner knapper */
+.category_box a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hover-effekt for en bedre brugeroplevelse */
+.category_box:hover {
+    background-color: darkcyan;
+    cursor: pointer;
+}
+
+
 
 a{
     color: inherit; 
