@@ -31,24 +31,7 @@ h2{
     margin-left: 50px; 
 }
 
-/* .category_list_container a {
-    font-family:Underoverskrift;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    font-size: 40px;
-    gap: 30px;
-    color: white;
-    text-align: center;
-}
-
-.Accessories, .Apparel, .Footwear, .Free_items, .Personal_care, .Sporting_goods{
-    background-color: cadetblue;
-    padding: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 10px;
-} */
-.category_list_container {
+.categorylistcontainer {
     font-family: Underoverskrift;
     display: grid;
     grid-template-columns: 2fr 2fr;
