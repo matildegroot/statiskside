@@ -1,16 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
-    <title>Product list</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <script src="list.js" defer></script>
-  </head>
-  <body>
-    <header><h1>FashionRUs</h1></header>
-    <main class="productList">
-      <!-- <h2 class="overskrift">Accessories</h2>
+console.log("script hentet");
+
+const category = "Apparel";
+const listContainer = document.querySelector(".productList");
+
+fetch ("https://kea-alt-del.dk/t7/api/products?limit=100")
+.then ((response) => response.json())
+.then (showProductList);
+
+function showProductList(data){
+    const markup = data
+    .map(
+        (product) =>
+            `
+        <h2 class="overskrift">Accessories</h2>
       <div class="product_list_container">
         <div>
           <img src="IMG/IMG_0902.webp" alt="billede1" class="product1" />
@@ -44,8 +46,12 @@
           <h4>DKK 1300,-</h4>
           <h5><a href="product.html">Read more</a></h5>
         </div>
-      </div> -->
-    </main>
-    <footer></footer>
-  </body>
-</html>
+      </div>
+      `
+    )
+    .join("");
+
+    if (listContainer){
+        listContainer.innerHTML = markup;
+    }
+}
